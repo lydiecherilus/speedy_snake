@@ -30,4 +30,14 @@ random_x = random.randint(-280, 280)
 random_y = random.randint(-280, 280)
 food.goto(random_x, random_y)
 
+# create scoreboard
+# the score will update each time the snake eats the food
+scoreboard = Turtle()
+total_score = 0
+scoreboard.color("white")
+scoreboard.penup()
+scoreboard.goto(0, 285)
+scoreboard.hideturtle()
+scoreboard.write(f" Score: {total_score}", align="center", font=("Verdana", 7, "normal"))
+
 screen.exitonclick()
