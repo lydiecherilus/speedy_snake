@@ -40,4 +40,19 @@ scoreboard.goto(0, 285)
 scoreboard.hideturtle()
 scoreboard.write(f" Score: {total_score}", align="center", font=("Verdana", 7, "normal"))
 
+# function to move the snake
+screen.listen()
+def up():
+    if snake_body.heading() != 270:
+        snake_body.setheading(90)
+def down():
+    if snake_body.heading() != 90:
+        snake_body.setheading(270)
+def left():
+    if snake_body.heading() != 0:
+        snake_body.setheading(180)
+def right():
+    if snake_body.heading() != 180:
+         snake_body.setheading(0)
+
 screen.exitonclick()
