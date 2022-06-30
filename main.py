@@ -55,4 +55,10 @@ def right():
     if snake_body.heading() != 180:
          snake_body.setheading(0)
 
+# move turtle using keyboard
+screen.onkeypress( right, "Right")
+screen.onkeypress( up, "Up")
+screen.onkeypress( left, "Left")
+screen.onkeypress( down, "Down")
+
 screen.exitonclick()
